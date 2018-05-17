@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="720.0" minWidth="1024.0" prefHeight="720.0" prefWidth="1024.0" style="-fx-background-color: #000000;" type="BorderPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <children>
+            <AnchorPane prefHeight="505.0" prefWidth="1037.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#292a2c" height="457.0" layoutX="155.0" stroke="BLACK" strokeType="INSIDE" width="714.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#444546" height="306.0" layoutX="171.0" layoutY="17.0" stroke="BLACK" strokeType="INSIDE" width="680.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323436" height="72.0" layoutX="198.0" layoutY="63.0" stroke="BLACK" strokeType="INSIDE" width="56.0" />
+                  <Label fx:id="lblSpeler2Info" alignment="CENTER" layoutX="513.0" layoutY="31.0" prefHeight="18.0" prefWidth="337.0" text="speler 2 score: XX" textFill="#ffd966">
+                     <font>
+                        <Font name="Eras Bold ITC" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblSpeler1Info" alignment="CENTER" layoutX="171.0" layoutY="31.0" prefHeight="18.0" prefWidth="340.0" text="speler 1 score: XX" textFill="#ffd966">
+                     <font>
+                        <Font name="Eras Bold ITC" size="12.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnEindeBeurt" layoutX="769.0" layoutY="461.0" mnemonicParsing="false" onAction="#btnEindeBeurtOnAction" prefHeight="28.0" prefWidth="100.0" style="-fx-background-color: #474747;" text="Next" textFill="#ffd966" translateY="60.0">
+                     <font>
+                        <Font name="Eras Bold ITC" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="345.0" layoutY="-76.0" text="Star Wars - Pazaak" textFill="#ffd966">
+                     <font>
+                        <Font name="Eras Bold ITC" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblsetsGewonnen1" layoutX="25.0" layoutY="31.0" prefHeight="18.0" prefWidth="111.0" text="sets gewonnen" textFill="#ffd966">
+                     <font>
+                        <Font name="Eras Bold ITC" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblsetsGewonnen2" layoutX="886.0" layoutY="31.0" prefHeight="18.0" prefWidth="111.0" text="sets gewonnen" textFill="#ffd966">
+                     <font>
+                        <Font name="Eras Bold ITC" size="14.0" />
+                     </font>
+                  </Label>
+                  <Line endX="220.0" layoutX="512.0" layoutY="239.0" rotate="90.0" startX="-220.0" />
+                  <Button fx:id="btnSpeelKaart" layoutX="433.0" layoutY="461.0" mnemonicParsing="false" onAction="#btnSpeelKaartOnAction" prefHeight="28.0" prefWidth="160.0" style="-fx-background-color: #474747;" text="selecteer aan kaart" textFill="#ffd966" translateY="60.0">
+                     <font>
+                        <Font name="Eras Bold ITC" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnBevries" layoutX="155.0" layoutY="475.0" mnemonicParsing="false" onAction="#btnBevriesOnAction" prefHeight="28.0" prefWidth="100.0" style="-fx-background-color: #474747;" text="stand" textFill="#ffd966" translateY="45.0">
+                     <font>
+                        <Font name="Eras Bold ITC" size="14.0" />
+                     </font>
+                  </Button>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323436" height="72.0" layoutX="550.0" layoutY="65.0" stroke="BLACK" strokeType="INSIDE" width="56.0" />
+                  <ImageView fx:id="imgView21" fitHeight="72.0" fitWidth="56.0" layoutX="550.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323436" height="72.0" layoutX="660.0" layoutY="65.0" stroke="BLACK" strokeType="INSIDE" width="56.0" />
+                  <ImageView fx:id="imgView22" fitHeight="72.0" fitWidth="56.0" layoutX="660.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323436" height="72.0" layoutX="770.0" layoutY="65.0" stroke="BLACK" strokeType="INSIDE" width="56.0" />
+                  <ImageView fx:id="imgView23" fitHeight="72.0" fitWidth="56.0" layoutX="770.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true" />
+                  <ComboBox fx:id="cmbKeuze" disable="true" layoutX="438.0" layoutY="480.0" onAction="#cmbKeuzeOnAction" prefWidth="150.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323436" height="72.0" layoutX="770.0" layoutY="150.0" stroke="BLACK" strokeType="INSIDE" width="56.0" />
+                  <ImageView fx:id="imgView26" fitHeight="72.0" fitWidth="56.0" layoutX="770.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323436" height="72.0" layoutX="660.0" layoutY="150.0" stroke="BLACK" strokeType="INSIDE" width="56.0" />
+                  <ImageView fx:id="imgView25" fitHeight="72.0" fitWidth="56.0" layoutX="660.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323436" height="72.0" layoutX="550.0" layoutY="150.0" stroke="BLACK" strokeType="INSIDE" width="56.0" />
+                  <ImageView fx:id="imgView24" fitHeight="72.0" fitWidth="56.0" layoutX="550.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323436" height="72.0" layoutX="550.0" layoutY="240.0" stroke="BLACK" strokeType="INSIDE" width="56.0" />
+                  <ImageView fx:id="imgView27" fitHeight="72.0" fitWidth="56.0" layoutX="550.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323436" height="72.0" layoutX="660.0" layoutY="240.0" stroke="BLACK" strokeType="INSIDE" width="56.0" />
+                  <ImageView fx:id="imgView28" fitHeight="72.0" fitWidth="56.0" layoutX="660.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323436" height="72.0" layoutX="770.0" layoutY="240.0" stroke="BLACK" strokeType="INSIDE" width="56.0" />
+                  <ImageView fx:id="imgView29" fitHeight="72.0" fitWidth="56.0" layoutX="770.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323436" height="72.0" layoutX="418.0" layoutY="238.0" stroke="BLACK" strokeType="INSIDE" width="56.0" />
+                  <ImageView fx:id="imgView19" fitHeight="72.0" fitWidth="56.0" layoutX="418.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323436" height="72.0" layoutX="308.0" layoutY="238.0" stroke="BLACK" strokeType="INSIDE" width="56.0" />
+                  <ImageView fx:id="imgView18" fitHeight="72.0" fitWidth="56.0" layoutX="308.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323436" height="72.0" layoutX="198.0" layoutY="238.0" stroke="BLACK" strokeType="INSIDE" width="56.0" />
+                  <ImageView fx:id="imgView17" fitHeight="72.0" fitWidth="56.0" layoutX="198.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323436" height="72.0" layoutX="198.0" layoutY="148.0" stroke="BLACK" strokeType="INSIDE" width="56.0" />
+                  <ImageView fx:id="imgView14" fitHeight="72.0" fitWidth="56.0" layoutX="198.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323436" height="72.0" layoutX="308.0" layoutY="148.0" stroke="BLACK" strokeType="INSIDE" width="56.0" />
+                  <ImageView fx:id="imgView15" fitHeight="72.0" fitWidth="56.0" layoutX="308.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323436" height="72.0" layoutX="418.0" layoutY="148.0" stroke="BLACK" strokeType="INSIDE" width="56.0" />
+                  <ImageView fx:id="imgView16" fitHeight="72.0" fitWidth="56.0" layoutX="418.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323436" height="72.0" layoutX="418.0" layoutY="63.0" stroke="BLACK" strokeType="INSIDE" width="56.0" />
+                  <ImageView fx:id="imgView13" fitHeight="72.0" fitWidth="56.0" layoutX="418.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323436" height="72.0" layoutX="308.0" layoutY="63.0" stroke="BLACK" strokeType="INSIDE" width="56.0" />
+                  <ImageView fx:id="imgView12" fitHeight="72.0" fitWidth="56.0" layoutX="308.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="imgView11" fitHeight="72.0" fitWidth="56.0" layoutX="198.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="lblSpelerScore1" layoutX="67.0" layoutY="65.0" text="0" textFill="#ffd966">
+                     <font>
+                        <Font name="Eras Bold ITC" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblSpelerScore2" layoutX="937.0" layoutY="65.0" text="0" textFill="#ffd966">
+                     <font>
+                        <Font name="Eras Bold ITC" size="14.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="lvKaartenSpeler1" layoutX="171.0" layoutY="330.0" maxHeight="120.0" maxWidth="325.0" minHeight="120.0" minWidth="325.0" orientation="HORIZONTAL" prefHeight="120.0" prefWidth="325.0" />
+                  <ListView fx:id="lvKaartenSpeler2" layoutX="526.0" layoutY="330.0" maxHeight="120.0" maxWidth="325.0" minHeight="120.0" minWidth="325.0" orientation="HORIZONTAL" prefHeight="120.0" prefWidth="325.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </left>
+</fx:root>

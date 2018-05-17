@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="720.0" minWidth="1024.0" prefHeight="720.0" prefWidth="1024.0" style="-fx-background-color: #000000;" type="BorderPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="200.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="TOP_LEFT" text="Welcome" textFill="#ffd966">
+               <font>
+                  <Font name="Eras Bold ITC" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Kies uw taal" textFill="#ffd966">
+               <font>
+                  <Font name="Eras Bold ITC" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Choose your language" textFill="#ffd966">
+               <font>
+                  <Font name="Eras Bold ITC" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Choisissez votre langue" textFill="#ffd966">
+               <font>
+                  <Font name="Eras Bold ITC" size="15.0" />
+               </font>
+            </Label>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <ImageView fx:id="imgNLFlag" fitHeight="50.0" fitWidth="75.0" onMouseClicked="#imgNLFlagOnClick" pickOnBounds="true">
+                     <image>
+                        <Image url="@../resources/Vlag_nl.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="imgFRFlag" fitHeight="50.0" fitWidth="75.0" onMouseClicked="#imgFRFlagOnClick" pickOnBounds="true">
+                     <image>
+                        <Image url="@../resources/Vlag_fr.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="imgENFlag" fitHeight="50.0" fitWidth="75.0" onMouseClicked="#imgENFlagOnClick" pickOnBounds="true">
+                     <image>
+                        <Image url="@../resources/Vlag_gb.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </VBox>
+   </center>
+   <top>
+      <Label text="Star Wars - Pazaak" textFill="#ffd966" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Eras Bold ITC" size="24.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <padding>
+      <Insets top="180.0" />
+   </padding>
+</fx:root>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="720.0" minWidth="1024.0" prefHeight="720.0" prefWidth="1024.0" style="-fx-background-color: #000000;" type="BorderPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="lblSpelLaden" alignment="CENTER" layoutX="280.0" layoutY="-61.0" minWidth="467.0" prefWidth="467.0" text="een spel laden" textFill="#ffd966">
+                     <font>
+                        <Font name="Eras Bold ITC" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnVolgende" layoutX="478.0" layoutY="167.0" mnemonicParsing="false" onAction="#btnVolgendeOnAction" style="-fx-background-color: #474747;" text="Button" textFill="#ffd966" translateY="30.0">
+                     <font>
+                        <Font name="Eras Bold ITC" size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="252.0" fitWidth="243.0" layoutX="37.0" layoutY="-41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/Paneel_afbeelding_1.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="252.0" fitWidth="243.0" layoutX="747.0" layoutY="-41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/Paneel_afbeelding_2.jpg" />
+                     </image>
+                  </ImageView>
+                  <ListView fx:id="lvWedstrijden" layoutX="308.0" layoutY="22.0" prefHeight="156.0" prefWidth="410.0" />
+                  <Label fx:id="lblBeschikbareWedstrijden" alignment="CENTER" layoutX="280.0" layoutY="-8.0" prefHeight="17.0" prefWidth="467.0" text="Beschikbare wedstrijden" textFill="#ffd966">
+                     <font>
+                        <Font name="Eras Bold ITC" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <Label text="Star Wars - Pazaak" textFill="#ffd966" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Eras Bold ITC" size="36.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets top="50.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <bottom>
+      <Label fx:id="lblMessage" prefHeight="22.0" prefWidth="1024.0" textFill="RED" translateY="-50.0" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Eras Bold ITC" size="18.0" />
+         </font>
+      </Label>
+   </bottom>
+</fx:root>

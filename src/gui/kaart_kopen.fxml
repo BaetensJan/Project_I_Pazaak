@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="720.0" minWidth="1024.0" prefHeight="720.0" prefWidth="1024.0" style="-fx-background-color: #000000;" type="BorderPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#292a2c" height="457.0" layoutX="34.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" width="953.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#444546" height="231.0" layoutX="57.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" width="905.0" />
+                  <Label fx:id="lblKaartInfo" layoutX="746.0" layoutY="22.0" prefHeight="18.0" prefWidth="67.0" text="Kaart info" textFill="#ffd966">
+                     <font>
+                        <Font name="Eras Bold ITC" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblBeschikbareKaarten" layoutX="237.0" layoutY="22.0" prefHeight="18.0" prefWidth="127.0" text="beschikbare kaarten" textFill="#ffd966">
+                     <font>
+                        <Font name="Eras Bold ITC" size="12.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnVolgende" layoutX="459.0" layoutY="505.0" mnemonicParsing="false" onAction="#btnVolgendeOnAction" prefHeight="28.0" prefWidth="103.0" style="-fx-background-color: #474747;" text="Next" textFill="#ffd966">
+                     <font>
+                        <Font name="Eras Bold ITC" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="345.0" layoutY="-76.0" text="Star Wars - Pazaak" textFill="#ffd966">
+                     <font>
+                        <Font name="Eras Bold ITC" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblPrijs" layoutX="187.0" layoutY="291.0" prefHeight="22.0" prefWidth="228.0" text="Credits needed:  x x x x" textFill="#ffd966">
+                     <font>
+                        <Font name="Eras Bold ITC" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblKrediet" layoutX="190.0" layoutY="364.0" prefHeight="22.0" prefWidth="220.0" text="speler credits:  x x x x" textFill="#ffd966">
+                     <font>
+                        <Font name="Eras Bold ITC" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnKoopKaart" layoutX="728.0" layoutY="361.0" mnemonicParsing="false" onAction="#btnKoopKaartOnAction" prefHeight="28.0" prefWidth="103.0" style="-fx-background-color: #474747;" text="buy card" textFill="#ffd966">
+                     <font>
+                        <Font name="Eras Bold ITC" size="14.0" />
+                     </font>
+                  </Button>
+                  <TextArea fx:id="txaInfo" layoutX="639.0" layoutY="48.0" maxHeight="165.0" maxWidth="281.0" minHeight="165.0" minWidth="281.0" prefHeight="165.0" prefWidth="281.0" />
+                  <ListView fx:id="lvKaarten" layoutX="125.0" layoutY="48.0" maxHeight="165.0" maxWidth="350.0" minHeight="165.0" minWidth="350.0" orientation="HORIZONTAL" prefHeight="165.0" prefWidth="350.0" />
+                  <Label fx:id="lblMessage" alignment="CENTER" layoutX="496.0" layoutY="472.0" textFill="RED">
+                     <font>
+                        <Font name="Eras Bold ITC" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </left>
+</fx:root>

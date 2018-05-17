@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="720.0" minWidth="1024.0" prefHeight="720.0" prefWidth="1024.0" style="-fx-background-color: #000000;" type="BorderPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#292a2c" height="457.0" layoutX="34.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" width="953.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#444546" height="231.0" layoutX="57.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" width="905.0" />
+                  <Label fx:id="lblKaartInfo" alignment="CENTER" layoutX="639.0" layoutY="22.0" maxWidth="281.0" minWidth="281.0" prefHeight="18.0" prefWidth="281.0" text="Kaart info" textFill="#ffd966">
+                     <font>
+                        <Font name="Eras Bold ITC" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblBeschikbareKaarten" alignment="CENTER" layoutX="101.0" layoutY="22.0" maxWidth="384.0" minWidth="384.0" prefHeight="18.0" prefWidth="384.0" text="beschikbare kaarten" textFill="#ffd966">
+                     <font>
+                        <Font name="Eras Bold ITC" size="12.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnVolgende" layoutX="852.0" layoutY="477.0" mnemonicParsing="false" onAction="#btnVolgendeOnAction" prefHeight="28.0" prefWidth="103.0" style="-fx-background-color: #474747;" text="Next" textFill="#ffd966">
+                     <font>
+                        <Font name="Eras Bold ITC" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="345.0" layoutY="-76.0" text="Star Wars - Pazaak" textFill="#ffd966">
+                     <font>
+                        <Font name="Eras Bold ITC" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblSpeler" layoutX="68.0" layoutY="482.0" prefHeight="18.0" prefWidth="177.0" text="wedstrijdstapel speler 1" textFill="#ffd966">
+                     <font>
+                        <Font name="Eras Bold ITC" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblNogTeKiezenKaarten" layoutX="435.0" layoutY="482.0" prefHeight="18.0" prefWidth="202.0" text="nog X kaarten beschikbaar" textFill="#ffd966">
+                     <font>
+                        <Font name="Eras Bold ITC" size="14.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="lvBeschikbareKaarten" layoutX="101.0" layoutY="48.0" maxHeight="165.0" maxWidth="390.0" minHeight="165.0" minWidth="384.0" orientation="HORIZONTAL" prefHeight="165.0" prefWidth="390.0" style="-fx-background-color: #444546;" />
+                  <TextArea fx:id="txaInfo" layoutX="639.0" layoutY="48.0" prefHeight="165.0" prefWidth="281.0" />
+                  <Button fx:id="btnVoegToe" alignment="CENTER" layoutX="520.0" layoutY="93.0" mnemonicParsing="false" onAction="#btnVoegToeOnAction" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: #37383a;" text="Button" textFill="#ffd966">
+                     <font>
+                        <Font name="Eras Bold ITC" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnVerwijder" alignment="CENTER" layoutX="520.0" layoutY="142.0" mnemonicParsing="false" onAction="#btnVerwijderOnAction" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: #37383a;" text="Button" textFill="#ffd966">
+                     <font>
+                        <Font name="Eras Bold ITC" size="14.0" />
+                     </font>
+                  </Button>
+                  <ListView fx:id="lvGeselecteerdeKaarten" layoutX="86.0" layoutY="282.0" maxHeight="140.0" maxWidth="849.0" minHeight="140.0" minWidth="849.0" orientation="HORIZONTAL" prefHeight="140.0" prefWidth="849.0" />
+               </children>
+            </AnchorPane>
+            <Label fx:id="lblMessage" alignment="CENTER" minWidth="1024.0" textFill="RED" translateY="40.0">
+               <font>
+                  <Font name="Eras Bold ITC" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </left>
+</fx:root>
